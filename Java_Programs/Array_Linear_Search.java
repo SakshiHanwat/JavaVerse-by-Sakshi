@@ -29,3 +29,6 @@ public class Array_Linear_Search{
         }
     }
 }
+
+// time co plexity : O(n)
+// time complexity is directly propotional to loop
