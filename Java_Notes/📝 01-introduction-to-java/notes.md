@@ -45,13 +45,14 @@
 - **OS + Hardware** → actual execution layer.
 
 ---
+```
 Example: Hello World
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Java!");
     }
 }
-
+```
 🔹 Flow for this Program:
 
 Developer writes Main.java.
@@ -63,8 +64,9 @@ Run → java Main → JVM loads Main.class.
 JVM executes → Calls main() method.
 
 Output on Console →
-
+```
 Hello, Java!
+```
 ---
 # 📘 Variables in Java
 
@@ -101,7 +103,8 @@ Hello, Java!
 
 ---
 
-Syntax of a Variable
+## 🔹Syntax of a Variable
+
 type variableName = value;
 
 Type → defines what data can be stored.
@@ -113,42 +116,51 @@ Variable Name → identifier chosen by programmer.
 ; (Semicolon) → ends the statement.
 
 📌 Example:
-
+```
 int num = 3;
 
 int → type.
 
 num → variable name.
+```
 
 3 → value.
 
 🔹 Printing Variables
 
+```
 System.out.print() → prints without newline.
 
 System.out.println() → prints with newline.
+```
 
 Example:
-
+```
 System.out.println(num);
-
+```
 🔹 Using Variables in Expressions
 
 Variables can be used in operations.
 
-Example 1: Direct addition in print statement:
+## Example 1: Direct addition in print statement:
 
+```
 System.out.println(3 + 5); // Output: 8
+```
 
-Example 2: Using variables:
+## Example 2: Using variables:
 
+```
 int num1 = 3;
 int num2 = 5;
 System.out.println(num1 + num2); // Output: 8
+```
 
-Example 3: Storing result in another variable:
+## Example 3: Storing result in another variable:
 
+```
 int num1 = 3;
 int num2 = 5;
 int result = num1 + num2;
 System.out.println(result); // Output: 8
+```
