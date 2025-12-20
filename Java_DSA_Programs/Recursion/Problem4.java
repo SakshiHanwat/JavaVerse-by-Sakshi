@@ -1,3 +1,5 @@
+//Print sum of N natural numbers
+
 public class Problem4{
     public static int CalcSum(int n){
         //Base Class 
