@@ -1,3 +1,5 @@
+//Print numbers from n to 1 (Increasing order) By Recursion
+
 public class Problem2{
     public static void printInc(int n){
         //Base case
