@@ -1,4 +1,4 @@
-class Tell me about yourself 
+class Tell_me_about_yourself 
 {
 	public static void main(String[] args)
 {
