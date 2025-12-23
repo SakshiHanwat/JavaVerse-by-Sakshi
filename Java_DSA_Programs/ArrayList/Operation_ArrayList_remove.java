@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Operation_ArrayList_remove{
+public class Operation_ArrayList_remove {
     public static void main(String[] args) {
         //Java Collection Framework
         ArrayList<Integer> list = new ArrayList<>();
