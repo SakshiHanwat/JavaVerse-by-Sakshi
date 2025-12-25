@@ -1,4 +1,5 @@
-public class RecursiveSearchLL {
+public class Print_LL
+ {
 
     public static class Node {
         int data;
