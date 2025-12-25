@@ -69,16 +69,19 @@ public class Remove_Cycle {
     }
 
     public static void main(String[] args) {
-        head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
+    head = new Node(1);
+    head.next = new Node(2);
+    head.next.next = new Node(3);
 
-        // create cycle
-        head.next.next = head;
-        // 1 -> 2 -> 3 -> 1
+    Node temp = head.next;   // temp = node with data 2
 
-        System.out.println(isCycle()); // true
-        removeCycle();
-        System.out.println(isCycle()); // false
-    }
+    // create cycle using temp
+    head.next.next.next = temp;
+    // 1 -> 2 -> 3 -> 2
+
+    System.out.println(isCycle()); // true
+    removeCycle();
+    System.out.println(isCycle()); // false
+}
+
 }
