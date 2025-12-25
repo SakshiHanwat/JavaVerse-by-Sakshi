@@ -30,7 +30,6 @@ public class Detect_Cycle
         return false; // cyle doesn't exist 
     }
     public static void main(String[] args) {
-        RecursiveSearchLL ll = new RecursiveSearchLL();
         head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
