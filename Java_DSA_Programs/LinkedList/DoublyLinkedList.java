@@ -1,99 +1,76 @@
-public class ZigZagLinkedList {
+public class DoublyLinkedList {
 
     static class Node {
         int data;
         Node next;
+        Node prev;
 
         Node(int data) {
             this.data = data;
             this.next = null;
+            this.prev = null;
         }
     }
 
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void addFirst(int data) {
         Node newNode = new Node(data);
-        if (head == null) {
-            head = tail = newNode;
-            return;
-        }
-        newNode.next = head;
-        head = newNode;
-    }
+        size++;
 
-    public void addLast(int data) {
-        Node newNode = new Node(data);
         if (head == null) {
             head = tail = newNode;
             return;
         }
-        tail.next = newNode;
-        tail = newNode;
+
+        newNode.next = head;
+        head.prev = newNode;
+        head = newNode;
     }
 
     public void print() {
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.data + "->");
+            System.out.print(temp.data + "<->");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
-    public void zigzag() {
-        // find mid
-        Node slow = head;
-        Node fast = head.next;
-
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+    public int removeFirst() {
+        if (head == null) {
+            System.out.println("DLL is empty");
+            return Integer.MIN_VALUE;
         }
 
-        Node mid = slow;
-
-        // reverse 2nd half
-        Node curr = mid.next;
-        mid.next = null;
-        Node prev = null;
-        Node next;
-
-        while (curr != null) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
         }
 
-        // zigzag merge
-        Node left = head;
-        Node right = prev;
-        Node nextL, nextR;
-
-        while (left != null && right != null) {
-            nextL = left.next;
-            left.next = right;
-            nextR = right.next;
-            right.next = nextL;
-
-            left = nextL;
-            right = nextR;
-        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
     }
 
     public static void main(String[] args) {
-        ZigZagLinkedList ll = new ZigZagLinkedList();
+        DoublyLinkedList dll = new DoublyLinkedList();
 
-        ll.addFirst(1);
-        ll.addLast(2);
-        ll.addFirst(3);
-        ll.addFirst(4);
-        ll.addFirst(5);
+        dll.addFirst(3);
+        dll.addFirst(2);
+        dll.addFirst(1);
 
-        ll.print();
-        ll.zigzag();
-        ll.print();
+        dll.print();
+        System.out.println(dll.size);
+
+        dll.removeFirst();
+        dll.print();
+        System.out.println(dll.size);
     }
 }
