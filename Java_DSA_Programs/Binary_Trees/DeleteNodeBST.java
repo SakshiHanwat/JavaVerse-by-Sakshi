@@ -1,4 +1,4 @@
-public class DeleteNodeBST {
+public class BST_Delete {
 
     static class Node {
         int data;
@@ -9,11 +9,14 @@ public class DeleteNodeBST {
         }
     }
 
-    // Find inorder successor
-    public static Node findInorderSuccessor(Node root) {
-        while (root.left != null) {
-            root = root.left;
-        }
+    public static Node insert(Node root, int val) {
+        if (root == null) return new Node(val);
+
+        if (val < root.data)
+            root.left = insert(root.left, val);
+        else
+            root.right = insert(root.right, val);
+
         return root;
     }
 
@@ -22,25 +25,32 @@ public class DeleteNodeBST {
 
         if (val < root.data) {
             root.left = delete(root.left, val);
-        }
+        } 
         else if (val > root.data) {
             root.right = delete(root.right, val);
-        }
+        } 
         else {
-            // Case 1: leaf node
-            if (root.left == null && root.right == null) {
+            // case 1: leaf
+            if (root.left == null && root.right == null)
                 return null;
-            }
 
-            // Case 2: single child
-            if (root.left == null) return root.right;
-            if (root.right == null) return root.left;
+            // case 2: single child
+            if (root.left == null)
+                return root.right;
+            else if (root.right == null)
+                return root.left;
 
-            // Case 3: two children
-            Node IS = findInorderSuccessor(root.right);
+            // case 3: two children
+            Node IS = inorderSuccessor(root.right);
             root.data = IS.data;
             root.right = delete(root.right, IS.data);
         }
+        return root;
+    }
+
+    public static Node inorderSuccessor(Node root) {
+        while (root.left != null)
+            root = root.left;
         return root;
     }
 
@@ -52,12 +62,11 @@ public class DeleteNodeBST {
     }
 
     public static void main(String[] args) {
-        Node root = new Node(8);
-        root.left = new Node(5);
-        root.right = new Node(10);
-        root.left.left = new Node(3);
-        root.left.right = new Node(6);
-        root.right.right = new Node(11);
+        int values[] = {8,5,3,1,4,6,10,11,14};
+        Node root = null;
+
+        for (int v : values)
+            root = insert(root, v);
 
         root = delete(root, 5);
         inorder(root);
