@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HeapInsert {
+public class HeapInsertMax {
 
     static class Heap {
         ArrayList<Integer> arr = new ArrayList<>();
