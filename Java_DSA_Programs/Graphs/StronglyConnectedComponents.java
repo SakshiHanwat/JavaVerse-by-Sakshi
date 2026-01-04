@@ -73,7 +73,7 @@ public class StronglyConnectedComponents {
         for (int i = 0; i < V; i++) {
             graph[i] = new ArrayList<>();
         }
-
+// kosaraju;s algorithm
         graph[0].add(new Edge(0, 2));
         graph[0].add(new Edge(0, 3));
         graph[1].add(new Edge(1, 0));
