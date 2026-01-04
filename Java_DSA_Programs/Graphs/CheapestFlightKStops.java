@@ -1,4 +1,4 @@
-// CheapestFlightKStops.java
+
 import java.util.*;
 
 public class CheapestFlightKStops {
@@ -38,7 +38,6 @@ public class CheapestFlightKStops {
                 continue;
 
             for (Edge e : graph[curr.node]) {
-                int u = e.src;
                 int v = e.dest;
                 int wt = e.wt;
 
