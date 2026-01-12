@@ -63,7 +63,7 @@ public class HelloWorld {
 }
 ```
 <p align="center">
-  <img src="images/" width="600">
+  <img src="images/java_program.webp" width="600">
 </p>
 
 ### Output
