@@ -10,7 +10,9 @@ Java follows the principle of **Write Once, Run Anywhere (WORA)**, which means t
 
 ## Features of Java
 
-
+<p align="center">
+  <img src="images/features_of_java" width="600">
+</p>
 
 ### 1. Object-Oriented Programming (OOP)
 
@@ -60,6 +62,9 @@ public class HelloWorld {
     }
 }
 ```
+<p align="center">
+  <img src="images/" width="600">
+</p>
 
 ### Output
 
@@ -88,6 +93,10 @@ Hello World!
 ---
 
 ## Java Program Execution Flow
+
+<p align="center">
+  <img src="images/Execution.webp" width="600">
+</p>
 
 1. **Source Code (.java file)** → Written by the programmer.
 2. **Compilation** → `javac` converts source code into bytecode.
