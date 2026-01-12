@@ -54,7 +54,7 @@ public class HelloWorld {
 ## Web Development
 
 <p align="center">
-  <img src="images/web_devlopment.webp" width="600">
+  <img src="images/web_development.webp" width="600">
 </p>
 
 **Technologies Used:**
