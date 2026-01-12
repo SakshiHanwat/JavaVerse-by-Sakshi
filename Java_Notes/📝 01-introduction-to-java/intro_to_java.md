@@ -83,7 +83,7 @@ public class HelloWorld {
 ## Test Automation
 
 <p align="center">
-  <img src="images/test_automation_selenium_automation.webp" width="600">
+  <img src="images/test_automation.webp" width="600">
 </p>
 
 - Selenium WebDriver – Browser automation  
@@ -93,7 +93,7 @@ public class HelloWorld {
 ## Android App Development
 
 <p align="center">
-  <img src="images/android_app_devlopment.webp" width="600">
+  <img src="images/android_app_development.webp" width="600">
 </p>
 
 Java plays a major role in Android application development and is widely used to build secure, scalable, and high-performance mobile applications.
@@ -105,7 +105,7 @@ Java plays a major role in Android application development and is widely used to
 ## Game Development
 
 <p align="center">
-  <img src="images/game_devlopment.webp" width="600">
+  <img src="images/game_development.webp" width="600">
 </p>
 
 Java is also used in game development to create cross-platform and high-performance games.
