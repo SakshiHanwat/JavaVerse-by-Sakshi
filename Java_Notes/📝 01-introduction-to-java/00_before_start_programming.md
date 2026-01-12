@@ -625,20 +625,3 @@ RAM → HDD  (Saving)
 HDD (store) → RAM (table) → Registers (pocket) → ALU (calculator)
 ```
 
----
-
-## 🧠 FINAL BAAT (VERY IMPORTANT)
-
-> CPU sirf RAM aur Registers se baat karta hai
-> HDD sirf storage ke liye hota hai
-> Program kabhi HDD par run nahi hota
-
----
-
-💯 **Ab technical + story dono tumhare paas hain**.
-
-Agar chaaho, next hum isi style me kar sakte hain:
-
-* Variables memory me kaise rehte hain
-* Stack vs Heap (story + diagram)
-* C language from zero (story based)
