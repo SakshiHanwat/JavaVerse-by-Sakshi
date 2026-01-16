@@ -1,0 +1,28 @@
+public class MaxProductSubarray {
+    public static void main(String[] args) {
+        int[] arr = {2, 3, -2, 4};
+
+        int maxEndingHere = arr[0];
+        int minEndingHere = arr[0];
+        int maxSoFar = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+
+            int tempMax = Math.max(
+                    current,
+                    Math.max(current * maxEndingHere, current * minEndingHere)
+            );
+
+            minEndingHere = Math.min(
+                    current,
+                    Math.min(current * maxEndingHere, current * minEndingHere)
+            );
+
+            maxEndingHere = tempMax;
+            maxSoFar = Math.max(maxSoFar, maxEndingHere);
+        }
+
+        System.out.println("Maximum Product Subarray: " + maxSoFar);
+    }
+}
