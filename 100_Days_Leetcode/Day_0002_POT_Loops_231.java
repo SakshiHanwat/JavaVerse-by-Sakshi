@@ -1,6 +1,6 @@
 
 import java.util.*;
-public class POT_Recursion_02{
+public class Day_0002_POT_Loops_231{
     public static boolean isPowerOfTwo(int n){
         if(n<=0) return false;
 
