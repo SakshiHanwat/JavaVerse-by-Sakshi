@@ -1,4 +1,4 @@
-public class Palindrome_9LC_01 {
+public class Day_0001_Palindrome_9LC {
 
     public boolean isPalindrome(int x) {
         int n = x;
