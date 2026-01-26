@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Power_Of_Two_231_02 {
+public class Day_0002_POT_BitManipulation_231 {
 
     public static boolean isPowerOfTwo(int n) {
         return n > 0 && (n & (n - 1)) == 0;
