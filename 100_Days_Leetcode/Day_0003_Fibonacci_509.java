@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Solution {
+class Day_0003_Fibonacci_509 {
 
     // Fibonacci function (recursion)
     public static int fib(int n) {
