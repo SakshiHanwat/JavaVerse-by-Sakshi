@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Solution {
+class Day_0005_Water_Bottles_1518 {
     public int numWaterBottles(int numBottles, int numExchange) {
 
         int drinkBottle = 0;   // total bottles pee chuke
