@@ -1,4 +1,4 @@
-public class Solution {
+public class Day_0004_Tribonacci_1137 {
 
     public static int tribonacci(int n) {
 
