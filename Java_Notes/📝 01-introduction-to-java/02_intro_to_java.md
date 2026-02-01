@@ -1,7 +1,5 @@
 # Introduction to Java
 
-**Last Updated:** 11 Nov, 2025
-
 Java is a **high-level, object-oriented programming language** developed by **Sun Microsystems** in **1995**. It is one of the most popular and widely used programming languages in the world. Java is mainly used for building **desktop applications, web applications, Android applications, and large-scale enterprise systems**.
 
 Java follows the principle of **Write Once, Run Anywhere (WORA)**, which means that Java code written on one platform can run on any other platform that supports the Java Virtual Machine (JVM).
