@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Day_0017_ContainerWithMostWater_11 {
 
     public int maxArea(int[] height) {
         int start = 0;
