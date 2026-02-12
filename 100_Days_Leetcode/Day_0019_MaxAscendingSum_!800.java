@@ -1,4 +1,4 @@
-public class Main {
+public class Day_0019_MaxAscendingSum_ {
 
     public static int maxAscendingSum(int[] nums) {
 
