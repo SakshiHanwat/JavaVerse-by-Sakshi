@@ -1,4 +1,4 @@
-public class Main {
+public class Day_0018_IncreasingTripletSubsequences {
 
     public static boolean increasingTriplet(int[] nums) {
 
