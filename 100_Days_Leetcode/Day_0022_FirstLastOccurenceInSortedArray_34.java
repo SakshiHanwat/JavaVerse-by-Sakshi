@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class Day_0022_FirstLastOccurenceInSortedArray_34 {
 
     public static void main(String[] args) {
 
