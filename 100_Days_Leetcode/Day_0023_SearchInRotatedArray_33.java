@@ -1,4 +1,4 @@
-class Solution {
+class Day_0023_SearchInRotatedArray_33 {
 
     public int findMin(int[] nums) {
 
