@@ -1,4 +1,4 @@
-public class Main {
+public class Day_0021_BinarySearch {
 
     public static int search(int[] nums, int target) {
 
