@@ -1,4 +1,4 @@
-class Solution {
+class Day_0026_SingleElementInSortedArray {
 
     public int singleNonDuplicate(int[] nums) {
 
