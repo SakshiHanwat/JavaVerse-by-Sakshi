@@ -1,4 +1,4 @@
-public class Day_0025_SearchInsertPosition_35 {
+public class Day_0026_SearchInsertPosition_35 {
 
     public static int searchInsert(int[] nums, int target) {
         int start = 0;
