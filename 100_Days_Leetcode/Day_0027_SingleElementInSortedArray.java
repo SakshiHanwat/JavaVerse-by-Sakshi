@@ -1,4 +1,4 @@
-class Day_0026_SingleElementInSortedArray {
+class Day_0027_SingleElementInSortedArray {
 
     public int singleNonDuplicate(int[] nums) {
 
