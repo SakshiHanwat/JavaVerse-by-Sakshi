@@ -1,4 +1,4 @@
-public class Day_0024_PeakElement_162 {
+public class Day_0025_PeakElement_162 {
 
     public static int findPeakElement(int[] nums) {
         int n = 0;
