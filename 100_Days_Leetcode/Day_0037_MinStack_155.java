@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Day_0037_MinStack_155 {
+class Main {
 
     private Stack<Integer> st;
     private Stack<Integer> min;
@@ -35,7 +35,7 @@ class Day_0037_MinStack_155 {
     }
 }
 
-public class Main {
+public class Day_0037_MinStack_155 {
     public static void main(String[] args) {
 
         MinStack obj = new MinStack();
