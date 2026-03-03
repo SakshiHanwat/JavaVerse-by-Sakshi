@@ -37,7 +37,8 @@ class MyQueue {
     }
 }
 
-public class Main {
+public class Day_0039_ImplementQueueusingStacks_232
+    {
     public static void main(String[] args) {
         MyQueue obj = new MyQueue();
 
