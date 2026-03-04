@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Day_0040_LongestConsecutiveSequence_128 {
     public int longestConsecutive(int[] nums) {
         
         if (nums.length == 0) return 0;
