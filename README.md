@@ -1,4 +1,4 @@
-# 🚀 JavaVerse-by-Sakshi
+# 🚀 JavaVerse-By-Sakshi
 
 A **complete Java + Data Structures & Algorithms (DSA) learning repository**, built step-by-step through **self-study**.  
 This repository contains **well-structured programs, notes, and practice code** covering **the complete Java & DSA journey from basics to advanced concepts**.
